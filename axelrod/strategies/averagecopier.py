@@ -28,7 +28,7 @@ class AverageCopier(Player):
         return random_choice(p)
 
 
-class NiceAverageCopier(AverageC):
+class NiceAverageCopier(AverageCopier):
     """Same as Average Copier, but always starts by cooperating."""
 
     name = 'Nice Average Copier'
