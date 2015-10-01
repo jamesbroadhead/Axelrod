@@ -26,9 +26,9 @@ def is_cheater(s):
     A function to check if a strategy cheats.
     """
     classifier = s.classifier
-    return classifier['inspects_source'] or\
-           classifier['manipulates_source'] or\
-           classifier['manipulates_state']
+    return classifier.get('inspects_source') or\
+           classifier.get('manipulates_source') or\
+           classifier.get('manipulates_state')
 
 def update_histories(player1, player2, move1, move2):
     """Updates histories and cooperation / defections counts following play."""
