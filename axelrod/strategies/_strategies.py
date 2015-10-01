@@ -49,6 +49,6 @@ strategies = [
     Team4Bot,
     TitFor2Tats, TwoTitsForTat,
     PlayerGreen1,
-    PlayerGreen2
-    AggressiveTitForTaTeam6
+    PlayerGreen2,
+    AggressiveTitForTaTeam6,
     ]
