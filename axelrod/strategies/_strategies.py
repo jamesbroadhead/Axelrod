@@ -9,7 +9,6 @@ from .backstabber import BackStabber, DoubleCrosser
 from .calculator import Calculator
 from .cooperator import Cooperator, TrickyCooperator
 from .cycler import AntiCycler, CyclerCCD, CyclerCCCD, CyclerCCCCCD
-from .darwin import Darwin
 from .defector import Defector, TrickyDefector
 from .forgiver import Forgiver, ForgivingTitForTat
 from .geller import Geller, GellerCooperator, GellerDefector
@@ -41,9 +40,15 @@ from .titfortat import (
     SuspiciousTitForTat, AntiTitForTat, HardTitForTat, HardTitFor2Tats)
 from .team3 import (Team3)
 
+from .team4 import Team4Bot
+from .team1Green import PlayerGreen1, PlayerGreen2
+from .agressivetitfortat import AggressiveTitForTaTeam6
+from .team1partred import Team1DarkRed
+
 # Note: Meta* strategies are handled in .__init__.py
 
 strategies = [
+    Team1DarkRed,  # Ranking higher for the only time this evening
     Aggravater,
     Alternator,
     AlternatorHunter,
@@ -62,7 +67,6 @@ strategies = [
     CyclerCCCCCD,
     CyclerCCCD,
     CyclerCCD,
-    Darwin,
     Davis,
     Defector,
     DefectorHunter,
@@ -126,13 +130,9 @@ strategies = [
     SuspiciousTitForTat,
     Tester,
     TitForTat,
-    TitFor2Tats,
-    TrickyCooperator,
-    TrickyDefector,
-    Tullock,
-    TwoTitsForTat,
-    WinStayLoseShift,
-    ZDExtort2,
-    ZDGTFT2,
-    e,
-]
+    Team4Bot,
+    TitFor2Tats, TwoTitsForTat,
+    PlayerGreen1,
+    PlayerGreen2,
+    AggressiveTitForTaTeam6,
+    ]

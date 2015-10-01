@@ -192,7 +192,8 @@ class ResultSet(object):
             where t is the total number of turns played per repetition for a given
             player excluding self-interactions.
         """
-        normalisation = self.turns * (self.nplayers - 1)
+        normalisation = self.turns * (self.nplayers - 1) or 1
+
         return [
             [1.0 * s / normalisation for s in r] for r in scores]
 
@@ -431,7 +432,10 @@ class ResultSet(object):
         Returns:
             a list of good partner ratings ordered by player index.
         """
-        return [1.0 * sum(row) / self._interactions for row in good_partner]
+        inter = self._interactions
+        if inter == 0:
+            inter = 1
+        return [1.0 * sum(row) / inter for row in good_partner]
 
     def _eigenvector(self, cooperation):
         """
