@@ -1,6 +1,5 @@
 from copy import deepcopy
 
-import pdb
 
 from axelrod import Player
 
@@ -27,10 +26,6 @@ class Team4Bot(Player):
             self.foo.append('D')
             return 'D'
         other = opponent.strategy(opponent)
-
-        if self.history != self.foo:
-            pdb.set_trace()
-
 
         if other == 'C':
             self.foo.append('C')
