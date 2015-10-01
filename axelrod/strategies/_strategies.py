@@ -38,6 +38,7 @@ from .retaliate import (
 from .titfortat import (
     TitForTat, TitFor2Tats, TwoTitsForTat, Bully, SneakyTitForTat,
     SuspiciousTitForTat, AntiTitForTat, HardTitForTat, HardTitFor2Tats)
+from .agressivetitfortat import AggressiveTitForTaTeam6
 
 from .team4 import Team4Bot
 
@@ -45,6 +46,7 @@ from .team4 import Team4Bot
 
 strategies = [
     Aggravater,
+    AggressiveTitForTaTeam6,
     Alternator,
     AlternatorHunter,
     AntiCycler,
