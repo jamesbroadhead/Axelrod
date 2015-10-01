@@ -2,7 +2,7 @@ import matplotlib
 import axelrod
 from copy import deepcopy
 from axelrod import Player
-from unittest.mock import Mock
+from mock import Mock
 import random
 from itertools import cycle
 

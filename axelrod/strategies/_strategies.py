@@ -137,7 +137,7 @@ strategies = [
     PlayerGreen1,
     PlayerGreen2,
     AggressiveTitForTaTeam6,
-    Prescient,
+    #Prescient,
     Fucker,
     Sane,
 
