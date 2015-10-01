@@ -17,10 +17,10 @@ class HumanPlayer(axelrod.Player):
             return choice
         else:
             if dict(strategies)[int(choice)].name == opponent.name:
-                print("You won!")
+                print("You won! Your opponent was %s" % opponent.name)
                 raise Exception("Congrats")
             else:
-                print("You lose!")
+                print("You lose! Your opponent was %s" % opponent.name)
                 raise Exception("You had one chance and you blew it.")
 
 
