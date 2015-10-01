@@ -38,6 +38,7 @@ from .retaliate import (
 from .titfortat import (
     TitForTat, TitFor2Tats, TwoTitsForTat, Bully, SneakyTitForTat,
     SuspiciousTitForTat, AntiTitForTat, HardTitForTat, HardTitFor2Tats)
+from .agressivetitfortat import AggressiveTitForTaTeam6
 
 from .team4 import Team4Bot
 from .team1Green import PlayerGreen1, PlayerGreen2
@@ -49,6 +50,7 @@ from .team1partred import Team1DarkRed
 strategies = [
     Team1DarkRed,  # Ranking higher for the only time this evening
     Aggravater,
+    AggressiveTitForTaTeam6,
     Alternator,
     AlternatorHunter,
     AntiCycler,
