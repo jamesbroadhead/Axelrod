@@ -9,7 +9,6 @@ from .backstabber import BackStabber, DoubleCrosser
 from .calculator import Calculator
 from .cooperator import Cooperator, TrickyCooperator
 from .cycler import AntiCycler, CyclerCCD, CyclerCCCD, CyclerCCCCCD
-from .darwin import Darwin
 from .defector import Defector, TrickyDefector
 from .forgiver import Forgiver, ForgivingTitForTat
 from .geller import Geller, GellerCooperator, GellerDefector
@@ -40,6 +39,7 @@ from .titfortat import (
     TitForTat, TitFor2Tats, TwoTitsForTat, Bully, SneakyTitForTat,
     SuspiciousTitForTat, AntiTitForTat, HardTitForTat, HardTitFor2Tats)
 
+from .team4 import Team4Bot
 
 # Note: Meta* strategies are handled in .__init__.py
 
@@ -62,7 +62,7 @@ strategies = [
     CyclerCCCCCD,
     CyclerCCCD,
     CyclerCCD,
-    Darwin,
+    Team4Bot,
     Davis,
     Defector,
     DefectorHunter,
