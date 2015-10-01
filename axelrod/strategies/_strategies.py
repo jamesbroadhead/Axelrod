@@ -39,7 +39,7 @@ from .retaliate import (
 from .titfortat import (
     TitForTat, TitFor2Tats, TwoTitsForTat, Bully, SneakyTitForTat,
     SuspiciousTitForTat, AntiTitForTat, HardTitForTat, HardTitFor2Tats)
-
+from .team3 import (Team3)
 
 # Note: Meta* strategies are handled in .__init__.py
 
