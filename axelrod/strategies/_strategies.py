@@ -40,11 +40,13 @@ from .titfortat import (
     SuspiciousTitForTat, AntiTitForTat, HardTitForTat, HardTitFor2Tats)
 
 from .team4 import Team4Bot
+from .team1Green import PlayerGreen1
 
 # Note: Meta* strategies are handled in .__init__.py
 
 strategies = [
     TitForTat,
     Team4Bot,
-    TitFor2Tats, TwoTitsForTat
+    TitFor2Tats, TwoTitsForTat,
+    PlayerGreen1,
 ]
