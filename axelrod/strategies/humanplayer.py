@@ -7,9 +7,9 @@ class HumanPlayer(axelrod.Player):
     name = 'Human'
 
     def strategy(self, opponent):
+        print([(a,b.name) for (a,b) in  strategies])
         if hasattr(opponent, 'history') and opponent.history:
             print("Your opponent played %s." % opponent.history[-1])
-        print([(a,b.name) for (a,b) in  strategies])
         choice = ""
         while choice not in ['C', 'D' ] + [str(x) for x in range(len(axelrod.demo_strategies))]:
             choice = input("Enter C or D, or 0 to 4: ").upper().strip()
@@ -17,10 +17,10 @@ class HumanPlayer(axelrod.Player):
             return choice
         else:
             if dict(strategies)[int(choice)].name == opponent.name:
-                print("You won!")
+                print("You won! Your opponent was %s" % opponent.name)
                 raise Exception("Congrats")
             else:
-                print("You lose!")
+                print("You lose! Your opponent was %s" % opponent.name)
                 raise Exception("You had one chance and you blew it.")
 
 
